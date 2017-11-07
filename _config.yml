@@ -1,3 +1,7 @@
 title: Unboundprep
-
+description: One stop shop for all discussions
 baseurl: /unboundprep
+
+
+plugins:
+    - jekyll-seo-tag
