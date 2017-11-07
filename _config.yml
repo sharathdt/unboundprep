@@ -8,3 +8,4 @@ baseurl: /unboundprep
 
 plugins:
     - jekyll-seo-tag
+    - jekyll-sitemap
