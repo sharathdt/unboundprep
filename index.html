@@ -21,9 +21,9 @@
    
    
     <link rel="dns-prefetch" href="https://s.w.org/">
-    <link rel="alternate" type="application/rss+xml" title="Enfold Startup Business Demo » Feed" href="https://kriesi.at/themes/enfold-startup/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Enfold Startup Business Demo » Comments Feed" href="https://kriesi.at/themes/enfold-startup/comments/feed/">
-    <link rel="alternate" type="application/rss+xml" title="Enfold Startup Business Demo » Home Comments Feed" href="https://kriesi.at/themes/enfold-startup/home/feed/">
+    <link rel="alternate" type="application/rss+xml" title="{{site.title}} » Feed" href="/feed/">
+    <link rel="alternate" type="application/rss+xml" title="{{site.title}} » Comments Feed" href="/comments/feed/">
+    <link rel="alternate" type="application/rss+xml" title="{{site.title}} » Home Comments Feed" href="/home/feed/">
 
     <!-- google webfont font replacement -->
 <!--     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
@@ -40,14 +40,14 @@
     <script type="text/javascript" src="{{site.baseurl}}/jquery.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/jquery-migrate.min.js"></script>
     <script type="text/javascript" src="{{site.baseurl}}/avia-compat.js"></script>
-    <link rel="https://api.w.org/" href="https://kriesi.at/themes/enfold-startup/wp-json/">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kriesi.at/themes/enfold-startup/xmlrpc.php?rsd">
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://kriesi.at/themes/enfold-startup/wp-includes/wlwmanifest.xml">
+    <link rel="https://api.w.org/" href="/wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
     <meta name="generator" content="WordPress 4.8.3">
-    <link rel="canonical" href="https://kriesi.at/themes/enfold-startup/">
-    <link rel="shortlink" href="https://kriesi.at/themes/enfold-startup/">
-    <link rel="alternate" type="application/json+oembed" href="https://kriesi.at/themes/enfold-startup/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkriesi.at%2Fthemes%2Fenfold-startup%2F">
-    <link rel="alternate" type="text/xml+oembed" href="https://kriesi.at/themes/enfold-startup/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkriesi.at%2Fthemes%2Fenfold-startup%2F&amp;format=xml">
+    <link rel="canonical" href="/">
+    <link rel="shortlink" href="/">
+<!--     <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkriesi.at%2Fthemes%2Fenfold-startup%2F"> -->
+<!--     <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkriesi.at%2Fthemes%2Fenfold-startup%2F&amp;format=xml"> -->
 
     <style type="text/css">
         iframe[name="google_conversion_frame"] {
@@ -55,9 +55,9 @@
         }
     </style>
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="alternate" type="application/rss+xml" title="Enfold Startup Business Demo RSS2 Feed" href="https://kriesi.at/themes/enfold-startup/feed/">
-    <link rel="pingback" href="https://kriesi.at/themes/enfold-startup/xmlrpc.php">
-    <!--[if lt IE 9]><script src="https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="{{site.title}} RSS2 Feed" href="/feed/">
+    <link rel="pingback" href="/xmlrpc.php">
+    <!--[if lt IE 9]><script src="/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
 
     <style type="text/css">
         .recentcomments a {
@@ -86,8 +86,8 @@ Updates: disabled
             font-family: 'entypo-fontello';
             font-weight: normal;
             font-style: normal;
-            src: url('https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?v=3');
-            src: url('https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?v=3#iefix') format('embedded-opentype'), url('https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff?v=3') format('woff'), url('https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf?v=3') format('truetype'), url('https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg?v=3#entypo-fontello') format('svg');
+            src: url('{{site.baseurl}}/entypo-fontello.eot?v=3');
+            src: url('{{site.baseurl}}/entypo-fontello.eot?v=3#iefix') format('embedded-opentype'), url('{{site.baseurl}}/entypo-fontello.woff?v=3') format('woff'), url('{{site.baseurl}}/entypo-fontello.ttf?v=3') format('truetype'), url('{{site.baseurl}}/entypo-fontello.svg?v=3#entypo-fontello') format('svg');
         }
         #top .avia-font-entypo-fontello,
         body .avia-font-entypo-fontello,
@@ -179,25 +179,18 @@ Updates: disabled
                                 <ul id="avia-menu" class="menu av-main-nav">
                                     <li id="menu-item-434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-431 current_page_item menu-item-top-level menu-item-top-level-1 current-menu-item"><a href="#top" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Home</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
                                     </li>
-                                    <li id="menu-item-437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-2"><a href="https://kriesi.at/themes/enfold-startup/products/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Products</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                                    <li id="menu-item-437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-2"><a href="/products/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Products</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
                                     </li>
-                                    <li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3"><a href="https://kriesi.at/themes/enfold-startup/pricing/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Pricing</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                                    <li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3"><a href="/pricing/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Pricing</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
                                     </li>
-                                    <li id="menu-item-435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="https://kriesi.at/themes/enfold-startup/our-story/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Our Story</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                                    <li id="menu-item-435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-4"><a href="/our-story/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Our Story</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
                                     </li>
-                                    <li id="menu-item-433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="https://kriesi.at/themes/enfold-startup/news/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">News</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                                    <li id="menu-item-433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5"><a href="/news/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">News</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
                                     </li>
-                                    <li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a href="https://kriesi.at/themes/enfold-startup/contact/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                                    <li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a href="/contact/" itemprop="url" style="height: 118px; line-height: 118px;"><span class="avia-bullet"></span><span class="avia-menu-text">Contact</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
                                     </li>
                                     <li id="menu-item-search" class="noMobile menu-item menu-item-search-dropdown menu-item-avia-special">
-                                        <a href="https://kriesi.at/themes/enfold-startup/?s=" data-avia-search-tooltip="
-
-&lt;form action=&quot;https://kriesi.at/themes/enfold-startup/&quot; id=&quot;searchform&quot; method=&quot;get&quot; class=&quot;&quot;&gt;
-	&lt;div&gt;
-		&lt;input type=&quot;submit&quot; value=&quot;&quot; id=&quot;searchsubmit&quot; class=&quot;button avia-font-entypo-fontello&quot; /&gt;
-		&lt;input type=&quot;text&quot; id=&quot;s&quot; name=&quot;s&quot; value=&quot;&quot; placeholder=&#39;Search&#39; /&gt;
-			&lt;/div&gt;
-&lt;/form&gt;" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" style="height: 118px; line-height: 118px;"><span class="avia_hidden_link_text">Search</span></a>
+                                        <a href="" data-avia-search-tooltip="" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" style="height: 118px; line-height: 118px;"><span class="avia_hidden_link_text">Search</span></a>
                                     </li>
                                     <li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
                                         <a href="#" style="height: 118px; line-height: 118px;">
@@ -260,7 +253,7 @@ Updates: disabled
                                     <div class="flex_column av_one_fourth  flex_column_div   avia-builder-el-4  el_after_av_three_fourth  avia-builder-el-last  ">
                                         <div style="height:50px" class="hr hr-invisible   avia-builder-el-5  el_before_av_font_icon  avia-builder-el-first "><span class="hr-inner "><span class="hr-inner-style"></span></span>
                                         </div>
-                                        <span class="av_font_icon avia_animate_when_visible  av-icon-style-border  avia-icon-pos-center  avia_start_animation avia_start_delayed_animation" style="color:#ffffff; border-color:#ffffff;"><a href="https://vimeo.com/64927358" class="av-icon-char mfp-iframe lightbox-added" style="font-size:40px;line-height:40px;width:40px;" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" data-avia-icon-tooltip="
+                                        <span class="av_font_icon avia_animate_when_visible  av-icon-style-border  avia-icon-pos-center  avia_start_animation avia_start_delayed_animation" style="color:#ffffff; border-color:#ffffff;"><a href="#" class="av-icon-char mfp-iframe lightbox-added" style="font-size:40px;line-height:40px;width:40px;" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" data-avia-icon-tooltip="
 Watch our Promo Video&lt;br /&gt;
 "></a></span>
                                     </div>
@@ -413,7 +406,7 @@ Watch our Promo Video&lt;br /&gt;
                 </div>
             </div>
             <div id="learn-more" class="main_color av-fullscreen-button avia-no-border-styling  avia-builder-el-20  el_after_av_image_hotspot  el_before_av_section  container_wrap fullsize">
-                <div class="avia-button-wrap avia-button-center  avia-builder-el-20  el_after_av_image_hotspot  el_before_av_section "><a href="https://kriesi.at/themes/enfold-startup/" class="avia-button avia-button-fullwidth   avia-icon_select-no avia-color-theme-color " style="color:#ffffff; "><span class="avia_iconbox_title">Learn more</span><span class="avia_button_background avia-button avia-button-fullwidth avia-color-custom" style="background-color:#444444; "></span></a>
+                <div class="avia-button-wrap avia-button-center  avia-builder-el-20  el_after_av_image_hotspot  el_before_av_section "><a href="/" class="avia-button avia-button-fullwidth   avia-icon_select-no avia-color-theme-color " style="color:#ffffff; "><span class="avia_iconbox_title">Learn more</span><span class="avia_button_background avia-button avia-button-fullwidth avia-color-custom" style="background-color:#444444; "></span></a>
                 </div>
             </div>
             <div id="av_section_3" class="avia-section main_color avia-section-huge avia-no-border-styling avia-bg-style-scroll  avia-builder-el-21  el_after_av_button_big  el_before_av_section   av-arrow-down-section container_wrap fullsize">
@@ -589,7 +582,7 @@ Watch our Promo Video&lt;br /&gt;
                                     <div class="flex_column av_one_fifth  flex_column_div   avia-builder-el-42  el_after_av_three_fifth  el_before_av_one_third  "></div>
                                     <div class="flex_column av_one_third  flex_column_div first  avia-builder-el-43  el_after_av_one_fifth  el_before_av_one_third  column-top-margin"></div>
                                     <div class="flex_column av_one_third  flex_column_div   avia-builder-el-44  el_after_av_one_third  el_before_av_one_third  column-top-margin">
-                                        <form action="https://kriesi.at/themes/enfold-startup/" method="post" class="avia_ajax_form av-form-labels-hidden   avia-builder-el-45  avia-builder-el-no-sibling   " data-avia-form-id="1" data-avia-redirect="https://kriesi.at/themes/enfold-startup/our-story/">
+                                        <form action="/" method="post" class="avia_ajax_form av-form-labels-hidden   avia-builder-el-45  avia-builder-el-no-sibling   " data-avia-form-id="1" data-avia-redirect="/our-story/">
                                             <fieldset>
                                                 <p class=" first_form  form_element form_element_three_fourth av-last-visible-form-element" id="element_avia_1_1">
                                                     <input name="avia_1_1" class="text_input is_email" type="text" id="avia_1_1" value="" placeholder="E-Mail*">
@@ -660,17 +653,17 @@ Watch our Promo Video&lt;br /&gt;
                         <section id="pages-2" class="widget clearfix widget_pages">
                             <h3 class="widgettitle">Sitemap</h3>
                             <ul>
-                                <li class="page_item page-item-21"><a href="https://kriesi.at/themes/enfold-startup/contact/">Contact</a>
+                                <li class="page_item page-item-21"><a href="/contact/">Contact</a>
                                 </li>
-                                <li class="page_item page-item-431 current_page_item"><a href="https://kriesi.at/themes/enfold-startup/">Home</a>
+                                <li class="page_item page-item-431 current_page_item"><a href="/">Home</a>
                                 </li>
-                                <li class="page_item page-item-14"><a href="https://kriesi.at/themes/enfold-startup/news/">News</a>
+                                <li class="page_item page-item-14"><a href="/news/">News</a>
                                 </li>
-                                <li class="page_item page-item-18"><a href="https://kriesi.at/themes/enfold-startup/our-story/">Our Story</a>
+                                <li class="page_item page-item-18"><a href="/our-story/">Our Story</a>
                                 </li>
-                                <li class="page_item page-item-320"><a href="https://kriesi.at/themes/enfold-startup/pricing/">Pricing</a>
+                                <li class="page_item page-item-320"><a href="/pricing/">Pricing</a>
                                 </li>
-                                <li class="page_item page-item-24"><a href="https://kriesi.at/themes/enfold-startup/products/">Products</a>
+                                <li class="page_item page-item-24"><a href="/products/">Products</a>
                                 </li>
                             </ul>
                             <span class="seperator extralight-border"></span>
@@ -690,7 +683,7 @@ Watch our Promo Video&lt;br /&gt;
             <footer class="container_wrap socket_color" id="socket" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
                 <div class="container">
 
-                    <span class="copyright">© Copyright  - <a href="https://kriesi.at/themes/enfold-startup/">Enfold Startup Business Demo</a> - <a href="http://kriesi.at/">Enfold WordPress Theme by Kriesi</a></span>
+                    <span class="copyright">© Copyright  - <a href="/">Enfold Startup Business Demo</a> - <a href="http://kriesi.at/">Enfold WordPress Theme by Kriesi</a></span>
 
 
                 </div>
@@ -723,9 +716,9 @@ Watch our Promo Video&lt;br /&gt;
     <script type="text/javascript">
         /* <![CDATA[ */
         var avia_framework_globals = avia_framework_globals || {};
-        avia_framework_globals.frameworkUrl = 'https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/framework/';
-        avia_framework_globals.installedAt = 'https://kriesi.at/themes/enfold-startup/wp-content/themes/enfold/';
-        avia_framework_globals.ajaxurl = 'https://kriesi.at/themes/enfold-startup/wp-admin/admin-ajax.php';
+        avia_framework_globals.frameworkUrl = '/wp-content/themes/enfold/framework/';
+        avia_framework_globals.installedAt = '/wp-content/themes/enfold/';
+        avia_framework_globals.ajaxurl = '/wp-admin/admin-ajax.php';
         /* ]]> */
     </script>
 
